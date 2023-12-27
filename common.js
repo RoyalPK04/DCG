@@ -1,3 +1,4 @@
+<script>
 // common.js
 document.addEventListener("DOMContentLoaded", function () {
     // Load header
@@ -24,3 +25,4 @@ function initializeSidebar() {
         sidebar.classList.toggle("active");
     });
 }
+</script>
