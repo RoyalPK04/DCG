@@ -2286,10 +2286,27 @@ button,
   }
   
   .team-member {
-      margin: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-  }
+    
+    text-align: center; /* Example: Center-align the text */
+    font-size: 18px;    /* Example: Set the font size */
+    color: #333;         /* Example: Set the text color */
+    padding-right: 20px;
+}
+
+/* Target the h4 element within the team-member class */
+.team-member h4 {
+    /* Add specific styles for the h4 element */
+    font-weight: bold;   /* Example: Make the font bold */
+    margin-top: 4px;    /* Example: Add top margin */
+    /* Add more styles as needed */
+}
+
+/* Target the p element within the team-member class */
+.team-member p {
+    /* Add specific styles for the p element */
+    font-style: italic;  /* Example: Make the font italic */
+    /* Add more styles as needed */
+}
   
   .team-member:hover {
       transform: scale(1.1);
@@ -2301,5 +2318,9 @@ button,
       border-radius: 50%;
       margin: 10px;
   }
+
+  .team-member:last-child {
+    padding-right: 0;
+}
   
   
