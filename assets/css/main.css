@@ -1622,26 +1622,36 @@ button,
       margin-left: 1.5em; }
     .features article:nth-last-child(1), .features article:nth-last-child(2) {
       margin-bottom: 0; }
-    .features article .icon {
-      -moz-flex-grow: 0;
-      -webkit-flex-grow: 0;
-      -ms-flex-grow: 0;
-      flex-grow: 0;
-      -moz-flex-shrink: 0;
-      -webkit-flex-shrink: 0;
-      -ms-flex-shrink: 0;
-      flex-shrink: 0;
-      display: block;
-      height: 10em;
-      line-height: 10em;
-      margin: 0 2em 0 0;
-      text-align: center;
-      width: 10em; }
+      .features article .icon {
+        -moz-flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-grow: 0;
+        flex-grow: 0;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        display: block;
+        height: 10em;
+        line-height: 10em;
+        margin: 0 2em 0 0;
+        text-align: center;
+        width: 10em;
+      }
+      
+      .features article .icon > * {
+        width: 100%; /* Make sure the SVG fills the entire container */
+        height: 100%;
+      }
+      
+      .features article .icon > svg {
+        fill: #C0D8B4; /* Adjust the fill property based on your design */
+      }
+      
       .features article .icon:before {
-        color: #C0D8B4;
-        font-size: 2.75rem;
-        position: relative;
-        top: 0.05em; }
+        display: none; /* Since you are using an SVG, you may not need the ::before pseudo-element */
+      }
+      
       .features article .icon:after {
         -moz-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
@@ -1656,7 +1666,9 @@ button,
         margin: -3.5em 0 0 -3.5em;
         position: absolute;
         top: 50%;
-        width: 7em; }
+        width: 7em;
+      }
+      
     .features article .content {
       -moz-flex-grow: 1;
       -webkit-flex-grow: 1;
