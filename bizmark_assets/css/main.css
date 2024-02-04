@@ -2195,8 +2195,7 @@ input, select, textarea {
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
-				background-size: 128px 128px, auto;
+				background: url('images/pic01.jpg') center/cover no-repeat;
 			}
 
 			.panel > *.color1 {
@@ -3322,9 +3321,10 @@ input, select, textarea {
 
 		.panel.banner.right {
 			-moz-flex-direction: row-reverse;
-			-webkit-flex-direction: row-reverse;
-			-ms-flex-direction: row-reverse;
-			flex-direction: row-reverse;
+            -webkit-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+            background: url("images/pic01.jpg") center/cover no-repeat;
 		}
 
 	@media screen and (max-width: 736px) {
