@@ -3687,3 +3687,70 @@ input, select, textarea {
 			}
 
 	}
+
+	/* Carousel container */
+.carousel-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  /* Carousel backdrop */
+.carousel-backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ff0000; /* Customize background color */
+	opacity: 0.7; /* Customize opacity */
+	z-index: -1; /* Place behind carousel items */
+  }
+
+  /* Carousel inner */
+  .carousel-inner {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Carousel item */
+  .carousel-item {
+	flex: 0 0 200px; /* Ensure max width of 200px */
+     padding: 10px; /* Adjust spacing as needed */
+    box-sizing: border-box;
+  }
+  
+  /* Images */
+  .carousel-item img {
+	width: 100%;
+	height: auto; /* Maintain aspect ratio */
+	object-fit: cover;
+  }
+  
+  /* Optional hover effect for scroll flow */
+  .carousel-container:hover .carousel-inner {
+	cursor: grab;
+  }
+  
+  /* Hide navigation buttons by default */
+  .carousel-container button {
+	display: none;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+	/* Adjust styles for smaller screens */
+	.carousel-item {
+	  flex: 1 0 150px; /* Show 2 images on mobile */
+	}
+  }
+  
+  @media (max-width: 480px) {
+	/* Adjust styles for even smaller screens */
+	.carousel-item {
+	  flex: 1 0 100px; /* Show 1 image on very small screens */
+	}
+  }
