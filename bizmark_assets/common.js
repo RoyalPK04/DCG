@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
   setInterval(() => {
     currentSlide = (currentSlide + 1) % slideCount;
     carouselInner.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-  }, 5000); // Adjust animation duration as needed
+  }, 2000); // Adjust animation duration as needed
 
   // Optional touch event handling for mobile scroll flow
   carouselInner.addEventListener('touchstart', (event) => {
