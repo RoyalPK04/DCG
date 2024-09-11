@@ -3683,6 +3683,8 @@ button:disabled,
   color: #333;
   /* Example: Set the text color */
   padding-right: 20px;
+  transition: all 0.2s;
+  cursor: pointer;
 }
 
 /* Target the h4 element within the team-member class */
@@ -4097,4 +4099,7 @@ button:disabled,
 .scroll-item:hover .item-info {
   bottom: 0; 
   transform: translateY(-100%); 
+}
+#team{
+  object-fit: cover;
 }
